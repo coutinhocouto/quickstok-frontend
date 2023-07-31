@@ -30,7 +30,7 @@ const FormCadastro = () => {
   return (
     <FormSec className="w-full" id="cadastro">
       <div className="container mx-auto">
-        <div className="grid grid-cols-2 gap-4 items-center">
+        <div className="holder items-center">
           <FormPhase>
             <h1>
               A chave para uma gestão de estoque impecável está aqui! Descubra a

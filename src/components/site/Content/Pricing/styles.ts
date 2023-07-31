@@ -27,6 +27,25 @@ export const PricesSec = styled.section`
     background-position: center;
     margin-top: 50px;
   }
+
+  .holder {
+    display: flex;
+    justify-content: space-around;
+    
+    @media only screen and (max-width: 567px) {
+      flex-direction: column;
+      padding: 0 10px;
+    }
+
+    > div {
+      width: 30%;
+
+      @media only screen and (max-width: 567px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
 `;
 
 export const PricesHolder = styled.div`
@@ -41,11 +60,20 @@ export const PricesHolder = styled.div`
   ul {
     li {
       text-align: center;
+
+      @media only screen and (max-width: 991px) {
+        text-align: left;
+      }
     }
   }
 
   span {
     font-size: 15px;
+    text-align: center;
+
+    @media only screen and (max-width: 991px) {
+      font-size: 14px;
+    }
   }
 
   h3 {
@@ -55,6 +83,14 @@ export const PricesHolder = styled.div`
 
   button {
     border: 1px solid #2d0102;
+  }
+
+  @media only screen and (max-width: 991px) {
+    padding: 30px 20px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding: 30px 10px;
   }
 `;
 
@@ -78,10 +114,14 @@ export const PriceIconHolder = styled.div`
   }
 `;
 
-export const PricesH2 = styled.div`
+export const PricesH2 = styled.h2`
   color: #fff;
   font-size: 48px;
   font-weight: 700;
   text-align: center;
   margin-bottom: 30px;
+
+  @media only screen and (max-width: 567px) {
+    font-size: 30px;
+  }
 `;

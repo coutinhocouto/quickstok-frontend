@@ -3,6 +3,14 @@ import styled from "styled-components";
 
 export const FormSec = styled.section`
   background-color: #fb990f;
+
+  .holder {
+    display: flex;
+
+    div {
+      width: 50%;
+    }
+  }
 `;
 
 export const FormPhase = styled.div`
@@ -21,9 +29,17 @@ export const FormPhase = styled.div`
     padding: 30px 30px 100px;
     font-weight: 500;
   }
+
+  @media only screen and (max-width: 991px) {
+    display: none;
+  }
 `;
 
 export const FormRegister = styled.div`
+  @media only screen and (max-width: 991px) {
+    width: 100% !important;
+  }
+
   h2 {
     color: #fff;
     font-weight: 700;
@@ -44,21 +60,21 @@ export const FormRegister = styled.div`
       color: #a2a2a2;
       font-size: 15px;
     }
-  
+
     input {
       margin-bottom: 10px;
       padding: 5px 10px 7px;
       border-radius: 5px;
       color: #2d0102;
     }
-  
+
     img {
       position: absolute;
       right: 30px;
       top: 35px;
       animation: mymove 3s infinite;
     }
-  
+
     button {
       background-color: #fb990f;
       color: #2d0102;
@@ -67,7 +83,7 @@ export const FormRegister = styled.div`
       font-size: 20px;
       border-radius: 10px;
       border-color: #fb990f;
-  
+
       &:hover {
         color: #fff;
       }
@@ -83,7 +99,6 @@ export const FormRegister = styled.div`
       }
     }
   }
-
 `;
 
 export const Waves = styled.svg`

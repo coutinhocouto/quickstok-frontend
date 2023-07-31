@@ -10,9 +10,15 @@ export const IntegrationSec = styled.section`
     color: #2d0102;
     font-size: 40px;
     font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
 
     span {
       color: #fb990f;
+    }
+
+    @media only screen and (max-width: 567px) {
+      font-size: 30px;
     }
   }
 
@@ -33,6 +39,14 @@ export const IntegrationUl = styled.ul`
     
     img {
       margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 567px) {
+      width: 32%;
+    }
+
+    @media only screen and (max-width: 350px) {
+      width: 49%;
     }
   }
 `;

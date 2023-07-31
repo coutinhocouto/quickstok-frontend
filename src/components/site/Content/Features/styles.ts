@@ -3,6 +3,34 @@ import styled from "styled-components";
 
 export const FeaturesSec = styled.section`
   padding: 100px 0;
+
+  @media only screen and (max-width: 567px) {
+    padding: 50px 0;
+  }
+
+  .holder {
+    display: flex;
+
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width: 567px) {
+     padding: 0 20px;   
+    }
+
+    > div {
+      width: 50%;
+
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+
+        &:first-child {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
 `;
 
 export const FeaturesH2 = styled.h2`
@@ -15,6 +43,11 @@ export const FeaturesH2 = styled.h2`
 
   span {
     color: #fb990f;
+  }
+
+  @media only screen and (max-width: 567px) {
+    font-size: 30px;
+    margin-bottom: 25px;
   }
 `;
 

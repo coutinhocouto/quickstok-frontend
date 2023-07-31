@@ -11,7 +11,7 @@ const Pricing = () => {
       <div className="container mx-auto">
         <PricesH2>Nossos Planos</PricesH2>
       </div>
-      <div className="grid grid-cols-3 gap-10 container mx-auto ">
+      <div className="holder container mx-auto ">
         <PricesHolder>
           <PriceIconHolder>
             <FaShippingFast />

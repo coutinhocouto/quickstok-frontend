@@ -4,6 +4,23 @@ import styled from "styled-components";
 export const HeaderMain = styled.section`
   background-color: #fb990f;
   padding: 30px 0;
+
+  .holder {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
+
+      > div a img  {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media only screen and (max-width: 350px) {
+      padding: 0 20px;
+    }
+  }
 `;
 
 export const RegisterButton = styled.button `
@@ -27,5 +44,9 @@ export const RegisterButton = styled.button `
     }
     svg {
       height: 13px;
+    }
+
+    @media only screen and (max-width: 350px) {
+      font-size: 13px;
     }
 `

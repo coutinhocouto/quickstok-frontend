@@ -6,6 +6,11 @@ export const FooterSec = styled.footer`
   background-color: #2d0102;
   position: relative;
   overflow: hidden;
+
+  .mx-auto {
+    z-index: 1;
+    position: relative;
+  }
 `;
 
 export const FooterHolder = styled.div`
@@ -21,6 +26,10 @@ export const FooterHolder = styled.div`
     margin: 50px 0 10px;
     font-size: 23px;
     font-weight: 700;
+
+    @media only screen and (max-width: 991px) {
+      margin: 20px 0 10px;
+    }
   }
 
   ul {
@@ -34,6 +43,12 @@ export const FooterHolder = styled.div`
     padding-top: 40px;
     font-size: 12px;
     border-top: 1px dotted #333;
+
+    @media only screen and (max-width: 991px) {
+      border: none;
+      margin-top: 40px;
+      padding-top: 0px;
+    }
   }
 `;
 

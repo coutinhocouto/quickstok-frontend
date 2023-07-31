@@ -6,7 +6,7 @@ import CTA from "../CTA";
 const Features = () => {
   return (
     <FeaturesSec className="w-full">
-      <div className="grid grid-cols-2 gap-4 container mx-auto items-center">
+      <div className="holder container mx-auto">
         <div>
           <FeaturesH2>
             Ferramentas que <span>seu negócio</span> precisa para crescer

@@ -8,7 +8,7 @@ const FrontHeader = () => {
   return (
     <HeaderMain>
       <section className="w-full container mx-auto">
-        <div className="grid grid-cols-2 gap-4 items-center">
+        <div className="holder items-center">
           <div>
             <Link href="/">
               <Image
@@ -23,9 +23,9 @@ const FrontHeader = () => {
           </div>
           <div className="text-right">
             <RegisterButton type="button" className="input-btn">
-              <a href="#">
+              <Link href="/login">
                 <FiLogIn /> Login
-              </a>
+              </Link>
             </RegisterButton>
             <RegisterButton type="button" className="input-btn">
               <a href="#cadastro">
