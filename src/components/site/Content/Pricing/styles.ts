@@ -1,8 +1,9 @@
 "use client";
+import { globalStyling } from "@/styles/globals";
 import styled from "styled-components";
 
 export const PricesSec = styled.section`
-  background-color: #2d0102;
+  background-color: ${globalStyling.secondaryColor};
 
   &::before {
     content: "";
@@ -53,9 +54,9 @@ export const PricesHolder = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 50px 30px;
-  background-color: #fb990f;
+  background-color: ${globalStyling.baseColor};
   border-radius: 20px;
-  color: #2d0102;
+  color: ${globalStyling.secondaryColor};
 
   ul {
     li {
@@ -82,7 +83,7 @@ export const PricesHolder = styled.div`
   }
 
   button {
-    border: 1px solid #2d0102;
+    border: 1px solid ${globalStyling.secondaryColor};
   }
 
   @media only screen and (max-width: 991px) {
@@ -103,10 +104,10 @@ export const Price = styled.span`
 
 export const PriceIconHolder = styled.div`
   color: #fff;
-  background-color: #2d0102;
+  background-color: ${globalStyling.secondaryColor};
   border-radius: 50%;
   padding: 15px;
-  box-shadow: 0 0 8px 0 #2d0102;
+  box-shadow: 0 0 8px 0 ${globalStyling.secondaryColor};
   margin-bottom: 35px;
 
   svg {

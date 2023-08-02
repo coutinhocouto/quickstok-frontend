@@ -1,8 +1,9 @@
 "use client";
+import { globalStyling } from "@/styles/globals";
 import styled from "styled-components";
 
 export const CTAButton = styled.button `
-    background-color: #2d0102;
+    background-color: ${globalStyling.secondaryColor};
     color: #fff;    
     border-radius: 100px;
     font-weight: 700;
@@ -49,10 +50,10 @@ export const CTAButton = styled.button `
     }
 
     &:hover {
-      color: #2d0102;
+      color: ${globalStyling.secondaryColor};
     }
     &::before {
-      background-color: #fb990f;
+      background-color: ${globalStyling.baseColor};
       border-radius: 100px;
     }
 

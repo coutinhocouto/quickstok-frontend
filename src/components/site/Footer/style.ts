@@ -1,9 +1,10 @@
 "use client";
+import { globalStyling } from "@/styles/globals";
 import styled from "styled-components";
 
 export const FooterSec = styled.footer`
   padding: 150px 0 50px;
-  background-color: #2d0102;
+  background-color: ${globalStyling.secondaryColor};
   position: relative;
   overflow: hidden;
 

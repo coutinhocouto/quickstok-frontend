@@ -1,4 +1,5 @@
 "use client";
+import { globalStyling } from "@/styles/globals";
 import styled from "styled-components";
 
 export const NewsHolder = styled.div`
@@ -8,8 +9,8 @@ export const NewsHolder = styled.div`
   margin-bottom: -95px;
   position: relative;
   z-index: 99;
-  background-color: #fb990f;
-  color: #2d0102;
+  background-color: ${globalStyling.baseColor};
+  color: ${globalStyling.secondaryColor};
   display: flex;
 
   > div {
@@ -66,7 +67,7 @@ export const NewsForm = styled.div`
     width: 68%;
     border-radius: 6px;
     padding: 15px 20px;
-    color: #2d0102;
+    color: ${globalStyling.secondaryColor};
 
     @media only screen and (max-width: 500px) {
       width: 100%;
@@ -75,19 +76,19 @@ export const NewsForm = styled.div`
   }
 
   button {
-    background-color: #fb990f;
-    color: #2d0102;
+    background-color: ${globalStyling.baseColor};
+    color: ${globalStyling.secondaryColor};
     font-weight: 700;
     font-size: 20px;
     border-radius: 6px;
-    border-color: #2d0102;
+    border-color: ${globalStyling.secondaryColor}2;
     width: 30%;
 
     &:hover {
       color: #fff;
     }
     &::before {
-      background-color: #2d0102;
+      background-color: ${globalStyling.secondaryColor};
     }
 
     svg {

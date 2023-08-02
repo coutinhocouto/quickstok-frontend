@@ -1,4 +1,5 @@
 "use client";
+import { globalStyling } from "@/styles/globals";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -7,14 +8,14 @@ export const IntegrationSec = styled.section`
   padding: 50px 0 100px;
 
   h2 {
-    color: #2d0102;
+    color: ${globalStyling.secondaryColor};
     font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 10px;
 
     span {
-      color: #fb990f;
+      color: ${globalStyling.baseColor};
     }
 
     @media only screen and (max-width: 567px) {

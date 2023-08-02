@@ -1,4 +1,5 @@
 "use client";
+import { globalStyling } from "@/styles/globals";
 import styled from "styled-components";
 
 export const FeaturesSec = styled.section`
@@ -34,7 +35,7 @@ export const FeaturesSec = styled.section`
 `;
 
 export const FeaturesH2 = styled.h2`
-  color: #2d0102;
+  color: ${globalStyling.secondaryColor};
   font-size: 40px;
   font-weight: 700;
   line-height: 1;
@@ -42,7 +43,7 @@ export const FeaturesH2 = styled.h2`
   max-width: 620px;
 
   span {
-    color: #fb990f;
+    color: ${globalStyling.baseColor};
   }
 
   @media only screen and (max-width: 567px) {
@@ -53,5 +54,5 @@ export const FeaturesH2 = styled.h2`
 
 export const FeaturesUl = styled.ul`
   font-size: 20px;
-  color: #2d0102;
+  color: ${globalStyling.secondaryColor};
 `

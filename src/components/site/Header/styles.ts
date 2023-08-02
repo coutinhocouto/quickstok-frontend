@@ -1,8 +1,9 @@
 "use client";
 import styled from "styled-components";
+import { globalStyling } from "@/styles/globals";
 
 export const HeaderMain = styled.section`
-  background-color: #fb990f;
+  background-color: ${globalStyling.baseColor};
   padding: 30px 0;
 
   .holder {
@@ -24,11 +25,11 @@ export const HeaderMain = styled.section`
 `;
 
 export const RegisterButton = styled.button `
-    background-color: #2d0102;
+    background-color: ${globalStyling.secondaryColor};
     color: #fff;    
     border-radius: 100px;
     font-weight: 700;
-    border-color: #2d0102;
+    border-color: ${globalStyling.secondaryColor};
     margin-left: 10px;
 
     a {
@@ -36,10 +37,10 @@ export const RegisterButton = styled.button `
       display: inline-block;
     }
     &:hover {
-      color: #2d0102;
+      color: ${globalStyling.secondaryColor};
     }
     &::before {
-      background-color: #fb990f;
+      background-color: ${globalStyling.baseColor};
       border-radius: 100px;
     }
     svg {

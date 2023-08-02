@@ -1,4 +1,4 @@
-import "./globals.css";
+import "../styles/globals.scss";
 import { Ubuntu } from "next/font/google";
 
 const inter = Ubuntu({ subsets: ["latin"], weight: ["300", "400", "500", "700"] });
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="pt_BR">
       <head>
-        <link rel='icon' href='/favicon.ico'/>
+        <link rel='icon' href='/icons/favicon.ico'/>
       </head>
       <body className={inter.className}>{children}</body>
     </html>

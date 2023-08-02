@@ -1,8 +1,9 @@
 "use client";
+import { globalStyling } from "@/styles/globals";
 import styled from "styled-components";
 
 export const FormSec = styled.section`
-  background-color: #fb990f;
+  background-color: ${globalStyling.baseColor};
 
   .holder {
     display: flex;
@@ -50,7 +51,7 @@ export const FormRegister = styled.div`
   form {
     display: flex;
     flex-direction: column;
-    background: #2d0102;
+    background: ${globalStyling.secondaryColor};
     border-radius: 15px;
     padding: 30px 30px 50px;
     position: relative;
@@ -65,7 +66,7 @@ export const FormRegister = styled.div`
       margin-bottom: 10px;
       padding: 5px 10px 7px;
       border-radius: 5px;
-      color: #2d0102;
+      color: ${globalStyling.secondaryColor};
     }
 
     img {
@@ -76,19 +77,19 @@ export const FormRegister = styled.div`
     }
 
     button {
-      background-color: #fb990f;
-      color: #2d0102;
+      background-color: ${globalStyling.baseColor};
+      color: ${globalStyling.secondaryColor};
       padding: 20px;
       font-weight: 700;
       font-size: 20px;
       border-radius: 10px;
-      border-color: #fb990f;
+      border-color: ${globalStyling.baseColor};
 
       &:hover {
         color: #fff;
       }
       &::before {
-        background-color: #2d0102;
+        background-color: ${globalStyling.secondaryColor};
       }
 
       svg {

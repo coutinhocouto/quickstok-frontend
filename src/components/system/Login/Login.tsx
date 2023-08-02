@@ -1,20 +1,27 @@
 import Link from "next/link";
 import Image from "next/image";
-import { LoginSec } from "./styles";
+import { LoginAction, LoginSec } from "./styles";
+import LoginAuth from "@/auth/Login";
 
 const Login = () => {
   return (
-    <LoginSec>
-      <Link href="/">
-        <Image
-          src="/logo.webp"
-          alt="Quick Stock Logo"
-          className=""
-          width={333}
-          height={40}
-          priority
-        />
-      </Link>
+    <LoginSec className="w-full h-full">
+      <div>
+        <Link href="/">
+          <Image
+            src="/logo.webp"
+            alt="Quick Stock Logo"
+            className="mx-auto"
+            width={333}
+            height={40}
+            priority
+          />
+        </Link>
+        <LoginAuth />
+        <LoginAction className="text-center">
+          <Link href="/lost-password">Perdeu sua senha?</Link> • <Link href="/register">Cadastre-se</Link>
+        </LoginAction>
+      </div>
     </LoginSec>
   );
 };
