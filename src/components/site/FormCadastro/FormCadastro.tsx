@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { FormPhase, FormRegister, FormSec, Waves } from "./styles";
-import { cnpjMask, phoneMask } from "@/utils/Masks";
 import Image from "next/image";
 import { AiOutlineUserAdd } from "react-icons/ai";
+import { cnpjMask, phoneMask } from "@/utils/Masks";
 
 const FormCadastro = () => {
   const [cnpj, setCNPJ] = useState({ cnpj: "" });
