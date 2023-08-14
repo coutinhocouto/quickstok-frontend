@@ -18,7 +18,13 @@ interface ContextProps {
 export const GlobalContext = createContext<ContextProps>({} as ContextProps);
 
 function getInitialState() {
-  const user = localStorage.getItem("user");
+
+  let user = null;
+
+  if (typeof window !== 'undefined') {
+    user = localStorage.getItem("user");
+  }
+
   return user ? JSON.parse(user) : [];
 }
 
