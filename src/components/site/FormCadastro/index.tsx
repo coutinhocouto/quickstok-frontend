@@ -1,1 +1,1 @@
-export { default } from './FormCadastro';
+export { default } from "./FormCadastro";

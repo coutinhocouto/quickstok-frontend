@@ -4,9 +4,9 @@ import { AiOutlineThunderbolt } from "react-icons/ai";
 import { FiLogIn } from "react-icons/fi";
 import Link from "next/link";
 
-const FrontHeader = () => {
+const Header = () => {
   return (
-    <HeaderMain>
+    <HeaderMain data-testid="site-header">
       <section className="w-full container mx-auto">
         <div className="holder items-center">
           <div>
@@ -39,4 +39,4 @@ const FrontHeader = () => {
   );
 };
 
-export default FrontHeader;
+export default Header;

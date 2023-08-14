@@ -5,19 +5,31 @@ import CTA from "../CTA";
 
 const Features = () => {
   return (
-    <FeaturesSec className="w-full">
+    <FeaturesSec className="w-full" data-testid="site-features">
       <div className="holder container mx-auto">
         <div>
           <FeaturesH2>
             Ferramentas que <span>seu negócio</span> precisa para crescer
           </FeaturesH2>
           <FeaturesUl>
-            <li><BsCheckAll /> ERP</li>
-            <li><BsCheckAll /> Cadastro de produtos</li>
-            <li><BsCheckAll /> Emissão de nota fiscal</li>
-            <li><BsCheckAll /> PDV</li>
-            <li><BsCheckAll /> Google Shopping</li>
-            <li><BsCheckAll /> Multi Empresas</li>
+            <li>
+              <BsCheckAll /> ERP
+            </li>
+            <li>
+              <BsCheckAll /> Cadastro de produtos
+            </li>
+            <li>
+              <BsCheckAll /> Emissão de nota fiscal
+            </li>
+            <li>
+              <BsCheckAll /> PDV
+            </li>
+            <li>
+              <BsCheckAll /> Google Shopping
+            </li>
+            <li>
+              <BsCheckAll /> Multi Empresas
+            </li>
           </FeaturesUl>
           <CTA link="#cadastro" text="COMECE GRÁTIS" classes="mt-10" />
         </div>

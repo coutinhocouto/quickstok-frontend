@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { FormPhase, FormRegister, FormSec, Waves } from "./styles";
-import { cnpjMask, phoneMask } from "@/utils/masks";
+import { cnpjMask, phoneMask } from "@/utils/Masks";
 import Image from "next/image";
 import { AiOutlineUserAdd } from "react-icons/ai";
 
@@ -28,7 +28,7 @@ const FormCadastro = () => {
   };
 
   return (
-    <FormSec className="w-full" id="cadastro">
+    <FormSec className="w-full" id="cadastro" data-testid="site-cadastro">
       <div className="container mx-auto">
         <div className="holder items-center">
           <FormPhase>

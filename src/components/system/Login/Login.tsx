@@ -5,7 +5,7 @@ import LoginAuth from "@/auth/Login";
 
 const Login = () => {
   return (
-    <LoginSec className="w-full h-full">
+    <LoginSec className="w-full h-full" data-testid="login-system">
       <div>
         <Link href="/">
           <Image
@@ -19,7 +19,8 @@ const Login = () => {
         </Link>
         <LoginAuth />
         <LoginAction className="text-center">
-          <Link href="/lost-password">Perdeu sua senha?</Link> • <Link href="/register">Cadastre-se</Link>
+          <Link href="/lost-password">Perdeu sua senha?</Link> •{" "}
+          <Link href="/register">Cadastre-se</Link>
         </LoginAction>
       </div>
     </LoginSec>

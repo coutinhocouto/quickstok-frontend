@@ -1,5 +1,5 @@
 "use client";
-import { globalStyling } from "@/styles/globals";
+import globalStyling  from "@/styles/globals";
 import styled from "styled-components";
 
 export const PricesSec = styled.section`
@@ -32,7 +32,7 @@ export const PricesSec = styled.section`
   .holder {
     display: flex;
     justify-content: space-around;
-    
+
     @media only screen and (max-width: 567px) {
       flex-direction: column;
       padding: 0 10px;

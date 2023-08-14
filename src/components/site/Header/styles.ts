@@ -1,6 +1,6 @@
 "use client";
 import styled from "styled-components";
-import { globalStyling } from "@/styles/globals";
+import globalStyling  from "@/styles/globals";
 
 export const HeaderMain = styled.section`
   background-color: ${globalStyling.baseColor};
@@ -13,7 +13,7 @@ export const HeaderMain = styled.section`
     @media only screen and (max-width: 700px) {
       flex-direction: column;
 
-      > div a img  {
+      > div a img {
         margin-bottom: 20px;
       }
     }
@@ -24,30 +24,30 @@ export const HeaderMain = styled.section`
   }
 `;
 
-export const RegisterButton = styled.button `
-    background-color: ${globalStyling.secondaryColor};
-    color: #fff;    
+export const RegisterButton = styled.button`
+  background-color: ${globalStyling.secondaryColor};
+  color: #fff;
+  border-radius: 100px;
+  font-weight: 700;
+  border-color: ${globalStyling.secondaryColor};
+  margin-left: 10px;
+
+  a {
+    padding: 5px 20px;
+    display: inline-block;
+  }
+  &:hover {
+    color: ${globalStyling.secondaryColor};
+  }
+  &::before {
+    background-color: ${globalStyling.baseColor};
     border-radius: 100px;
-    font-weight: 700;
-    border-color: ${globalStyling.secondaryColor};
-    margin-left: 10px;
+  }
+  svg {
+    height: 13px;
+  }
 
-    a {
-      padding: 5px 20px;
-      display: inline-block;
-    }
-    &:hover {
-      color: ${globalStyling.secondaryColor};
-    }
-    &::before {
-      background-color: ${globalStyling.baseColor};
-      border-radius: 100px;
-    }
-    svg {
-      height: 13px;
-    }
-
-    @media only screen and (max-width: 350px) {
-      font-size: 13px;
-    }
-`
+  @media only screen and (max-width: 350px) {
+    font-size: 13px;
+  }
+`;

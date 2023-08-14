@@ -1,5 +1,5 @@
 "use client";
-import { globalStyling } from "@/styles/globals";
+import globalStyling  from "@/styles/globals";
 import styled from "styled-components";
 
 export const NewsHolder = styled.div`
@@ -111,4 +111,4 @@ export const NewsForm = styled.div`
   @media only screen and (max-width: 500px) {
     flex-direction: column;
   }
-`
+`;

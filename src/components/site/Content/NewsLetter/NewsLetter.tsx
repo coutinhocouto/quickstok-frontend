@@ -2,7 +2,7 @@ import { NewsForm, NewsHolder } from "./styles";
 
 const NewsLetter = () => {
   return (
-    <section>
+    <section data-testid="site-newsletter">
       <NewsHolder className="container mx-auto items-center">
         <div>
           <h3>Assine nossa NewsLetter</h3>
@@ -10,7 +10,9 @@ const NewsLetter = () => {
         </div>
         <NewsForm>
           <input type="email" placeholder="Seu email" />
-          <button type="submit" className="input-btn">Cadastre-se</button>
+          <button type="submit" className="input-btn">
+            Cadastre-se
+          </button>
         </NewsForm>
       </NewsHolder>
     </section>

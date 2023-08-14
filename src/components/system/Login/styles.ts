@@ -1,5 +1,5 @@
 "use client";
-import { globalStyling } from "@/styles/globals";
+import globalStyling  from "@/styles/globals";
 import styled from "styled-components";
 
 export const LoginSec = styled.section`

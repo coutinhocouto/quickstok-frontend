@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <FooterSec className="w-full">
+    <FooterSec className="w-full" data-testid="site-footer">
       <FooterAnimation>
         <span>
           <Image

@@ -1,5 +1,5 @@
 "use client";
-import { globalStyling } from "@/styles/globals";
+import globalStyling  from "@/styles/globals";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -25,7 +25,7 @@ export const IntegrationSec = styled.section`
 
   p {
     font-size: 16px;
-    color: #3E3F66;
+    color: #3e3f66;
   }
 `;
 
@@ -36,8 +36,8 @@ export const IntegrationUl = styled.ul`
 
   li {
     width: 19%;
-    margin: 15px .5%;
-    
+    margin: 15px 0.5%;
+
     img {
       margin: 0 auto;
     }
@@ -57,6 +57,6 @@ export const IntegrationLink = styled(Link)`
   text-align: center;
   text-decoration: underline;
   font-size: 16px;
-  color: #3E3F66;
+  color: #3e3f66;
   margin-bottom: 10px;
 `;

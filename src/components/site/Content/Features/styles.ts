@@ -1,5 +1,5 @@
 "use client";
-import { globalStyling } from "@/styles/globals";
+import globalStyling  from "@/styles/globals";
 import styled from "styled-components";
 
 export const FeaturesSec = styled.section`
@@ -17,7 +17,7 @@ export const FeaturesSec = styled.section`
     }
 
     @media only screen and (max-width: 567px) {
-     padding: 0 20px;   
+      padding: 0 20px;
     }
 
     > div {
@@ -55,4 +55,4 @@ export const FeaturesH2 = styled.h2`
 export const FeaturesUl = styled.ul`
   font-size: 20px;
   color: ${globalStyling.secondaryColor};
-`
+`;

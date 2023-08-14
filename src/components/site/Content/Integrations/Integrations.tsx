@@ -4,7 +4,7 @@ import CTA from "../CTA";
 
 const Integrations = () => {
   return (
-    <IntegrationSec className="w-full">
+    <IntegrationSec className="w-full" data-testid="site-integrations">
       <div className="container mx-auto">
         <h2 className="text-center">
           Tenha uma presença <span>completa</span> na internet

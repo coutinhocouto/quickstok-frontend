@@ -1,4 +1,10 @@
-import { Price, PriceIconHolder, PricesH2, PricesHolder, PricesSec } from "./styles";
+import {
+  Price,
+  PriceIconHolder,
+  PricesH2,
+  PricesHolder,
+  PricesSec,
+} from "./styles";
 import { FaShippingFast } from "react-icons/fa";
 import { PiFastForwardThin } from "react-icons/pi";
 import { TbStairsUp } from "react-icons/tb";
@@ -7,7 +13,7 @@ import CTA from "../CTA";
 
 const Pricing = () => {
   return (
-    <PricesSec>
+    <PricesSec data-testid="site-pricing">
       <div className="container mx-auto">
         <PricesH2>Nossos Planos</PricesH2>
       </div>

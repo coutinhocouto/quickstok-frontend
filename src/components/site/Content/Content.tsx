@@ -5,12 +5,12 @@ import Pricing from "./Pricing";
 
 const Content = () => {
   return (
-    <>
+    <main data-testid="site-content">
       <Integrations />
       <Pricing />
       <Features />
       <NewsLetter />
-    </>
+    </main>
   );
 };
 
